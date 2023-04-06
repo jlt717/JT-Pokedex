@@ -1,0 +1,29 @@
+:root {
+  --BlackishTextColor: #444; 
+  --BackgroundColor: #ea9999;
+  --BodyFontWeight: 400;
+  --BodyFontSize: 30px;
+  --HeaderFontWeight: 700;
+  --HeaderFontSize: 72px;
+  --BlackHeaderColor: #000; 
+}
+
+body {
+  font-family: 'Delicious Handrawn', cursive;
+  font-weight: var(--BodyFontWeight);
+  font-size: var(--BodyFontSize);
+  line-height: 1.8;
+  text-align: center;
+  color: var(--BlackishTextColor);
+  background-color: var(--BackgroundColor);
+  letter-spacing: 1px;
+}
+
+header {
+  color: var(--BlackHeaderColor);
+  font-weight: var(--HeaderFontWeight);
+  font-size: var(--HeaderFontSize);
+  line-height: 2.0;
+  margin: auto;
+  letter-spacing: 8px;
+}
