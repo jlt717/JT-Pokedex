@@ -4,7 +4,7 @@
   --BodyFontWeight: 400;
   --BodyFontSize: 30px;
   --HeaderFontWeight: 700;
-  --HeaderFontSize: 56px;
+  --HeaderFontSize: 64px;
   --BlackHeaderColor: #000; 
 }
 
@@ -35,6 +35,7 @@ header {
 .pokemon-list {
    list-style: none;
 }
+
 .button-class {
   background-color: #741b47; 
   border: none;
@@ -43,7 +44,7 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -51,5 +52,67 @@ header {
   background-color: #000;
   color: #fff;
   border: 4px solid #741b47;
+  font-family: 'Delicious Handrawn', cursive;
+  letter-spacing: 0.20em;
+  text-transform: capitalize;
 }
 
+.is-visible {
+  display:block;
+}
+
+
+#modal-container {
+  background-color: #fff;
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; 
+  overflow: auto; 
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #777;
+  text-decoration: underline;
+}
+
+.modal h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  display:block;
+}
