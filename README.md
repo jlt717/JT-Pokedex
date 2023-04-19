@@ -1,0 +1,1 @@
+This application allows users to browse through approximately 150 different Pokemon, with stats and pictures of each.
