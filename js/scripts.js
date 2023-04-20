@@ -1,4 +1,5 @@
 //IIFE and getAll and add functions
+
 const pokemonRepository = (function () {
    let pokemonList = [];
 
@@ -69,7 +70,7 @@ const pokemonRepository = (function () {
       // let modalContainer = document.querySelector('#modal-container');
       modalContainer.innerHTML = '';
       console.log("pokemon:", pokemon)
-      
+
 
       let modal = document.createElement('div');
       modal.classList.add('modal');
@@ -77,7 +78,7 @@ const pokemonRepository = (function () {
       image.src = pokemon.imageUrl
       image.setAttribute('height', 200);
       image.setAttribute('width', 200);
-      modalContainer.appendChild(image)
+      //modalContainer.appendChild(image)
 
       let closeButtonElement = document.createElement('button');
       closeButtonElement.classList.add('modal-close');
@@ -87,23 +88,28 @@ const pokemonRepository = (function () {
       let titleElement = document.createElement('h1');
       titleElement.innerText = (pokemon.name);
 
+      let typesElement = document.createElement('p');
+      typesElement.innerText = 'types:' + '' + pokemon.types?.map(type => type.type.name).join(",");
+
       let contentElement = document.createElement('p');
       contentElement.innerText = 'height:' + '' + (pokemon.height);
-      
 
+      modal.appendChild(image);
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
       modal.appendChild(contentElement);
+      modal.appendChild(typesElement);
       modalContainer.appendChild(modal);
-      
 
-     // modalContainer.classList.remove('non-visible');
       modalContainer.classList.add('is-visible');
 
-      document.querySelector('#show-modal').addEventListener
-     ('click', () => {
-         showModal(item);
-      });
+      // modalContainer.classList.remove('non-visible');
+      // modalContainer.classList.add('is-visible');
+
+      // document.querySelector('#show-modal').addEventListener
+      //    ('click', () => {
+      //       showModal(item);
+      //    });
    }
 
    function hideModal() {
