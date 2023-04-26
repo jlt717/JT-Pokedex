@@ -1,13 +1,19 @@
-:root {
+/* :root {
   --BlackishTextColor: #444; 
-  --BackgroundColor: #ea9999;
+  --BackgroundColor: #e94848;
   --BodyFontWeight: 400;
-  --BodyFontSize: 30px;
+  --BodyFontSize: 40px;
   --HeaderFontWeight: 700;
-  --HeaderFontSize: 64px;
+  --H1FontSize: 72px;
   --BlackHeaderColor: #000; 
-}
+} */
 
+.navbar{
+color: #ffff00;
+font-size: 64px;
+
+
+}
 body {
   font-family: 'Delicious Handrawn', cursive;
   font-weight: var(--BodyFontWeight);
@@ -37,7 +43,6 @@ header {
 }
 
 .button-class {
-  background-color: #741b47; 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -99,7 +104,7 @@ header {
   color: #777;
   text-decoration: underline;
 }
-
+ 
 .modal h1 {
   text-align: center;
   margin-top: 0;
