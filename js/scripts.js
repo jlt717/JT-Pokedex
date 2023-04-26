@@ -24,6 +24,7 @@ const pokemonRepository = (function () {
       button.setAttribute("data-toggle", "modal");
       button.setAttribute("data-target", "exampleModal");
 
+      button.innerText = pokemon.name;
       listpokemon.appendChild(button);
       pokemonList.appendChild(listpokemon);
       button.addEventListener("click", function () {
@@ -86,19 +87,19 @@ const pokemonRepository = (function () {
       image.setAttribute('height', 200);
       image.setAttribute('width', 200);
 
-      let nameElement = $("<h1>" + item.name + "</h1>");
-      let imageElementFront = $('<img class="modal-img" style= width:50%>');
+      let titleElement = $("<h1>" + item.name + "</h1>");
+      let imageElementFront = $('<img class="img" style= width:50%>');
       imageElementFront.attr("src", item.imageUrlFront);
-      let imageElementBack = $('<img class="modal-img" style="width:50%">');
+      let imageElementBack = $('<img class="img" style="width:50%">');
       imageElementBack.attr("src", item.imageUrlBack);
-      let heightElement = $("<p>" + "height : " + item.height + "</p>");
-      let contentElement = $("<p>" + "types : " + item.types + "</p>");
+      let contentElement = $("<p>" + "height : " + item.height + "</p>");
+      let typesElement = $("<p>" + "types : " + item.types + "</p>");
 
-      modalTitle.append(nameElement);
+      modalTitle.append(titleElement);
       modalBody.append(imageElementFront);
       modalBody.append(imageElementBack);
-      modalBody.append(heightElement);
       modalBody.append(contentElement);
+      modalBody.append(typesElement);
 
 
       // let closeButtonElement = document.createElement('button');
@@ -113,7 +114,7 @@ const pokemonRepository = (function () {
       // typesElement.innerText = 'types:' + '' + pokemon.types?.map(type => type.type.name).join(",");
 
       // let contentElement = document.createElement('p');
-      // contentElement.innerText = 'height:' + '' + (pokemon.height);
+      // heightElement.innerText = 'height:' + '' + (pokemon.height);
 
       // modal.appendChild(image);
       // modal.appendChild(closeButtonElement);
