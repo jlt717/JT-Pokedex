@@ -77,8 +77,8 @@ const pokemonRepository = (function () {
       modalTitle.empty();
       modalBody.empty();
 
-      // modalContainer.innerHTML = '';
-      // console.log("pokemon:", pokemon)
+      modalContainer.innerHTML = '';
+      console.log("pokemon:", pokemon)
       let modal = document.createElement('div');
       modal.classList.add('modal');
       let image = document.createElement("img")
