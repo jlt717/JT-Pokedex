@@ -39,18 +39,32 @@
 
 <body>
     <header>
-
+      <nav class="navbar navbar-dark bg-dark">
         <h1>Pokédex</h1>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Pokémon" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" style= "color:#ff0000;" type="submit">Search</button> 
+        </form>
+      </nav>
+       
 
     </header>
-    <div id="modal-container"></div>
+    <main>
+
+
+    </main>
+   
+    <div class="row">
+<div class= "12 col"></div>
+
+    </div>
     <!-- Button trigger modal -->
     <ul class= "pokemon-list list-group" ></ul>
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
 </button>
 
 <!-- Modal -->
+<div id="modal-container"></div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
