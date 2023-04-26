@@ -38,12 +38,13 @@
 
 
 <body>
-    <header>
+    <header class="fixed-top">
+    
       <nav class="navbar navbar-dark bg-dark">
-        <h1>Pokédex</h1>
+        <a class= "navbar-brand" href="index.html">Pokédex</a> 
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search Pokémon" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" style= "color:#ff0000;" type="submit">Search</button> 
+          <button class="btn btn-outline-warning my-2 my-sm-0" style= "color:#ff0000;" type="submit">Search</button> 
         </form>
       </nav>
        
@@ -53,14 +54,10 @@
 
 
     </main>
-   
-    <div class="row">
-<div class= "12 col"></div>
 
-    </div>
     <!-- Button trigger modal -->
     <ul class= "pokemon-list list-group" ></ul>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+	<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
 </button>
 
 <!-- Modal -->
