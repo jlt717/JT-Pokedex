@@ -8,16 +8,20 @@
   --BlackHeaderColor: #000; 
 } */
 
-.navbar{
-color: #ffff00;
+.navbar-brand{
+color: #ffc107;
 font-size: 64px;
 
 
 }
+.navbar{
+  color:#ffc107
+}
+
 body {
   font-family: 'Delicious Handrawn', cursive;
   font-weight: var(--BodyFontWeight);
-  font-size: var(--BodyFontSize);
+  font-size: 24px;
   line-height: 1.8;
   text-align: center;
   color: var(--BlackishTextColor);
