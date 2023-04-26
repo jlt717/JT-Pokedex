@@ -17,9 +17,13 @@ const pokemonRepository = (function () {
    function addListItem(pokemon) {
       let pokemonList = document.querySelector(".pokemon-list");
       let listpokemon = document.createElement("li");
+      listpokemon.classList.add("list-group-item");
       let button = document.createElement("button");
-      button.innerText = pokemon.name;
-      button.classList.add("button-class");
+
+      button.classList.add("btn btn-primary");
+      button.setAttribute("data-toggle", "modal");
+      button.setAttribute("data-target", "exampleModal");
+
       listpokemon.appendChild(button);
       pokemonList.appendChild(listpokemon);
       button.addEventListener("click", function () {
@@ -72,7 +76,7 @@ const pokemonRepository = (function () {
       let modalHeader = $(".modal-header");
       modalTitle.empty();
       modalBody.empty();
-      modalHeader(pokemon);
+
       // modalContainer.innerHTML = '';
       // console.log("pokemon:", pokemon)
       let modal = document.createElement('div');
