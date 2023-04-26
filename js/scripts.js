@@ -21,8 +21,8 @@ const pokemonRepository = (function () {
       let button = document.createElement("button");
 
       button.classList.add("btn btn-primary");
-      button.setAttribute("data-toggle", "modal");
-      button.setAttribute("data-target", "exampleModal");
+      button.attr("data-toggle", "modal");
+      button.attr("data-target", "exampleModal");
 
       button.innerText = pokemon.name;
       listpokemon.appendChild(button);
@@ -77,27 +77,32 @@ const pokemonRepository = (function () {
       let modalHeader = $(".modal-header");
       modalTitle.empty();
       modalBody.empty();
+      modalHeader.empty();
 
       modalContainer.innerHTML = '';
       console.log("pokemon:", pokemon)
-      let modal = document.createElement('div');
-      modal.classList.add('modal');
-      let image = document.createElement("img")
-      image.src = pokemon.imageUrl
-      image.setAttribute('height', 200);
-      image.setAttribute('width', 200);
+      // let modal = document.createElement('div');
+      // modal.classList.add('modal');
+      // let image = document.createElement("img")
+      // image.src = pokemon.imageUrl
+      // image.setAttribute('height', 200);
+      // image.setAttribute('width', 200);
 
-      let titleElement = $("<h1>" + item.name + "</h1>");
-      let imageElementFront = $('<img class="img" style= width:50%>');
-      imageElementFront.attr("src", item.imageUrlFront);
-      let imageElementBack = $('<img class="img" style="width:50%">');
-      imageElementBack.attr("src", item.imageUrlBack);
-      let contentElement = $("<p>" + "height : " + item.height + "</p>");
-      let typesElement = $("<p>" + "types : " + item.types + "</p>");
+      
+
+       let titleElement = $("<h1>" + item.name + "</h1>");
+       let image = $('<img class="img" style= width:50%>');
+       image.attr("src", pokemon.imageUrl);
+      // let imageElementFront = $('<img class="img" style= width:50%>');
+      // imageElementFront.attr("src", item.imageUrlFront);
+      // let imageElementBack = $('<img class="img" style="width:50%">');
+      // imageElementBack.attr("src", item.imageUrlBack);
+       let contentElement = $("<p>" + "height : " + item.height + "</p>");
+       let typesElement = $("<p>" + "types : " + item.types + "</p>");
 
       modalTitle.append(titleElement);
-      modalBody.append(imageElementFront);
-      modalBody.append(imageElementBack);
+      modalBody.append(image);
+      // modalBody.append(imageElementBack);
       modalBody.append(contentElement);
       modalBody.append(typesElement);
 
