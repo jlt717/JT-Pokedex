@@ -20,7 +20,7 @@ const pokemonRepository = (function () {
       listpokemon.classList.add("list-group-item");
       let button = document.createElement("button");
 
-      button.classList.add("btn", "btn-primary");
+      button.classList.add("btn", "btn-warning");
       button.setAttribute("data-toggle", "modal");
       button.setAttribute("data-target", "#exampleModal");
 
@@ -88,14 +88,15 @@ const pokemonRepository = (function () {
       // image.setAttribute('height', 200);
       // image.setAttribute('width', 200);
 
-      
 
-       let titleElement = $("<h5>" + item.name + "</h5>");
-       let image = $('<img class="img" style= width:60%>');
-       image.attr("src", item.imageUrl);
-       let contentElement = $("<p>" + "height : " + item.height + "</p>");
-       let typesElement = $("<p>" + "types : " + item.types?.map(type => type.type.name).join(",") + "</p>");
 
+      let titleElement = $("<h5>" + item.name + "</h5>");
+      let image = $('<img class="img" style= width:60%>');
+      image.attr("src", item.imageUrl);
+      let contentElement = $("<p>" + "height : " + item.height + "</p>");
+      let typesElement = $("<p>" + "types : " + item.types?.map(type => type.type.name).join(",") + "</p>");
+
+      modalHeader.append(titleElement);
       modalTitle.append(titleElement);
       modalBody.append(image);
       modalBody.append(contentElement);
