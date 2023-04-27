@@ -38,24 +38,28 @@
 
 
 <body>
+  <!-- <div class="container-fluid">
+  <div class="row"> -->
+    <div class="container">
     <header class="fixed-top">
     
       <nav class="navbar navbar-dark bg-dark">
-        <a class= "navbar-brand" href="index.html">Pokédex</a> 
+        <a class= "navbar-brand" style="color:#ffc107" href="index.html">Pokédex</a> 
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search Pokémon" aria-label="Search">
+          <input class="form-control mr-sm-2" id="pokemonSearch" type="search" placeholder="Search Pokémon" aria-label="Search">
           <button class="btn btn-outline-warning my-2 my-sm-0" style= "color:#ff0000;" type="submit">Search</button> 
         </form>
       </nav>
-       
+    </div>
 
     </header>
     <main>
-
-
     </main>
 
+    
+
     <!-- Button trigger modal -->
+    
     <ul class= "pokemon-list list-group" ></ul>
 	<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
 </button>
@@ -81,9 +85,6 @@
     </div>
   </div>
 </div>
-   <div class="row">
-
-   </div>
 
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
@@ -97,7 +98,7 @@
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 
-
+  
     <footer>
 
     </footer>
