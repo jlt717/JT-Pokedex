@@ -77,7 +77,7 @@ const pokemonRepository = (function () {
       let modalHeader = $(".modal-header");
       modalTitle.empty();
       modalBody.empty();
-      modalHeader.empty();
+      //modalHeader.empty();
 
       modalContainer.innerHTML = '';
       console.log("pokemon:", item)
