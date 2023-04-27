@@ -138,11 +138,11 @@ body {
   font-size: 24px;
 }
 
-#modal-container {
+#exampleModal {
   display: none;
 }
 
-#modal-container.is-visible {
+#exampleModal.is-visible {
   display:block;
 }
  .btn-warning{
