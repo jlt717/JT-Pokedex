@@ -12,17 +12,14 @@ body {
   letter-spacing: 1px;
 }
 
-.list-group-item {
-  background-color: #5c6166;
-  border: none;
-
-}
-
 .pokemon-list {
 
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #5c6166;
 
 }
 
