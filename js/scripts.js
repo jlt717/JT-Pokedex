@@ -47,14 +47,14 @@ const pokemonRepository = (function () {
     });
 
   //Needed to listen to the click of the searchBtn to que a search
-  document.querySelector(".searchBtn").addEventListener("click", function (e) {
-    e.preventDefault();
+  // document.querySelector(".searchBtn").addEventListener("click", function (e) {
+  //   e.preventDefault();
 
-    const inputValue = document.querySelector("#pokemonSearch");
-    if (inputValue.value.trim().length > 0) {
-      search(inputValue.value.trim());
-    }
-  });
+  //   const inputValue = document.querySelector("#pokemonSearch");
+  //   if (inputValue.value.trim().length > 0) {
+  //     search(inputValue.value.trim());
+  //   }
+  // });
 
   function getAll() {
     return pokemonList;
