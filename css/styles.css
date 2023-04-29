@@ -1,5 +1,131 @@
+.navbar-brand {
+  font-weight: 500;
+font-size: 32px;
+}
 
-.navbar-brand{
+body {
+  font-family: 'Delicious Handrawn', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.list-group-item {
+  background-color: #5c6166;
+  border: none;
+
+}
+
+.pokemon-list {
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+
+}
+
+
+.button-class {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 4px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: #fff;
+  border: 4px solid #ff0000;
+  font-family: 'Delicious Handrawn', cursive;
+  letter-spacing: 0.20em;
+  text-transform: capitalize;
+}
+
+.btn-warning {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 4px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: #000;
+  border: 4px solid #ff0000;
+  font-family: 'Delicious Handrawn', cursive;
+  text-transform: capitalize;
+  padding: 20px 40px;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+}
+
+#modal-container {
+  position: flex;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: auto;
+  text-align: center;
+  font-size: 24px;
+  background-color: #5c6166;
+  margin: auto;
+
+}
+
+.modal-content {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #000;
+  padding: 15px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  border-radius: 25px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 32px;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.modal-header.h5 {
+  font-size: 32px;
+}
+
+#exampleModal {
+  display: none;
+}
+
+#exampleModal.is-visible {
+  display: block;
+
+}
+
+.page-footer {
+  background-color: #ff0000;
+}
+
+
+
+
+/* .navbar-brand{
 font-size:64px;
 font-weight: 500;
 
@@ -36,7 +162,7 @@ body {
   display: inline-block;
   margin:8px 4px;
   -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  /* transition-duration: 0.4s;
   cursor: pointer;
   background-color: #ffc107;
   color: #fff;
@@ -54,7 +180,7 @@ body {
   display: inline-block;
   font-size: 24px;
   margin: 8px 4px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; /* Safari 
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: #ffc107;
@@ -67,9 +193,9 @@ body {
   font-size:32px;
   letter-spacing: 0.15em;
   text-transform: capitalize;
-}
+} */
 
-#modal-container {
+/* #modal-container {
   position: flex;
   padding: none;
   box-sizing: border-box;
@@ -127,4 +253,4 @@ body {
 .page-footer{
   background-color: #ff0000;
 }
- 
+  */ 
