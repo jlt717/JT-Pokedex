@@ -10,8 +10,4 @@
       "quotes": ["error", "single"]
     }
   }
-
-  // {
-  //   "extends": ["eslint:recommended", "plugin:prettier/recommended"]
-  // }
 }
