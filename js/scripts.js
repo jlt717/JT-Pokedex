@@ -3,7 +3,7 @@
 const pokemonRepository = (function () {
   let pokemonList = [];
 
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
     pokemonList.push(pokemon);
@@ -12,13 +12,13 @@ const pokemonRepository = (function () {
   function search(searchWord) {
     //using filtered because it will return an empty array if nothing is found.
     const filtered = pokemonList.filter((pokemon) =>
-      pokemon.name.startsWith(searchWord)
+      pokemon.name.startsWith(searchWord),
     );
-    let pokemonListSelector = document.querySelector(".pokemon-list");
-    pokemonListSelector.innerHTML = "";
+    let pokemonListSelector = document.querySelector('.pokemon-list');
+    pokemonListSelector.innerHTML = '';
     //If pokemon search returns nothing print error message
     if (filtered.length === 0) {
-      pokemonListSelector.innerHTML = "No Pokemon was found";
+      pokemonListSelector.innerHTML = 'No Pokemon was found';
       return;
     }
     //display all found pokemons on page
@@ -29,17 +29,17 @@ const pokemonRepository = (function () {
 
   //This is needed because we need to list to the input field so that when its empty we print all the pokemons we have saved
   document
-    .querySelector("#pokemonSearch")
-    .addEventListener("input", function (e) {
+    .querySelector('#pokemonSearch')
+    .addEventListener('input', function (e) {
       if (e.target.value.trim().length === 0) {
         // this will prevent the user from typing just spaces
-        let pokemonListSelector = document.querySelector(".pokemon-list");
-        pokemonListSelector.innerHTML = "";
+        let pokemonListSelector = document.querySelector('.pokemon-list');
+        pokemonListSelector.innerHTML = '';
         pokemonList.forEach((pokemon) => {
           addListItem(pokemon);
         });
       } else {
-        const inputValue = document.querySelector("#pokemonSearch");
+        const inputValue = document.querySelector('#pokemonSearch');
         if (inputValue.value.trim().length > 0) {
           search(inputValue.value.trim());
         }
@@ -61,19 +61,19 @@ const pokemonRepository = (function () {
   }
   //event listener
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector(".pokemon-list");
-    let listpokemon = document.createElement("div");
-    listpokemon.classList.add("col-4");
-    let button = document.createElement("button");
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listpokemon = document.createElement('div');
+    listpokemon.classList.add('col-4');
+    let button = document.createElement('button');
 
-    button.classList.add("btn", "btn-warning");
-    button.setAttribute("data-toggle", "modal");
-    button.setAttribute("data-target", "#exampleModal");
+    button.classList.add('btn', 'btn-warning');
+    button.setAttribute('data-toggle', 'modal');
+    button.setAttribute('data-target', '#exampleModal');
 
     button.innerText = pokemon.name;
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
-    button.addEventListener("click", function () {
+    button.addEventListener('click', function () {
       showDetails(pokemon);
     });
   }
@@ -121,26 +121,26 @@ const pokemonRepository = (function () {
     });
   }
 
-  let modalContainer = document.querySelector("#modal-container");
+  let modalContainer = document.querySelector('#modal-container');
   function showModal(item) {
-    let modalBody = $(".modal-body");
-    let modalTitle = $(".modal-title");
-    let modalHeader = $(".modal-header");
+    let modalBody = $('.modal-body');
+    let modalTitle = $('.modal-title');
+    let modalHeader = $('.modal-header');
     modalTitle.empty();
     modalBody.empty();
 
-    modalContainer.innerHTML = "";
-    console.log("pokemon:", item);
+    modalContainer.innerHTML = '';
+    console.log('pokemon:', item);
 
-    let titleElement = $("<h5>" + item.name + "</h5>");
+    let titleElement = $('<h5>' + item.name + '</h5>');
     let image = $('<img class="img" style= width:50%>');
-    image.attr("src", item.imageUrl);
-    let contentElement = $("<p>" + "height : " + item.height + "</p>");
+    image.attr('src', item.imageUrl);
+    let contentElement = $('<p>' + 'height : ' + item.height + '</p>');
     let typesElement = $(
-      "<p>" +
-        "types : " +
-        item.types?.map((type) => type.type.name).join(",") +
-        "</p>"
+      '<p>' +
+        'types : ' +
+        item.types?.map((type) => type.type.name).join(',') +
+        '</p>',
     );
 
     modalHeader.append(titleElement);
@@ -162,4 +162,3 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
-

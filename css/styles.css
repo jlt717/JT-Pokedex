@@ -1,10 +1,10 @@
 .navbar-brand {
   font-weight: 500;
-font-size: 42px;
+  font-size: 42px;
 }
 
 body {
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: "Delicious Handrawn", cursive;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.8;
@@ -14,16 +14,13 @@ body {
 }
 
 .pokemon-list {
-
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   align-items: center;
   padding: 20px 40px;
   background-color: #5c6166;
- 
 }
-
 
 .button-class {
   text-align: center;
@@ -37,10 +34,9 @@ body {
   background-color: #ffc107;
   color: #fff;
   border: 4px solid #ff0000;
-  font-family: 'Delicious Handrawn', cursive;
-  letter-spacing: 0.20em;
+  font-family: "Delicious Handrawn", cursive;
+  letter-spacing: 0.2em;
   text-transform: capitalize;
- 
 }
 
 .btn-warning {
@@ -55,7 +51,7 @@ body {
   background-color: #ffc107;
   color: #000;
   border: 4px solid #ff0000;
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: "Delicious Handrawn", cursive;
   text-transform: capitalize;
   padding: 20px 40px;
   font-size: 32px;
@@ -77,7 +73,6 @@ body {
   font-size: 24px;
   background-color: #5c6166;
   margin: auto;
-
 }
 
 .modal-content {
@@ -97,7 +92,6 @@ body {
 
 .modal-close {
   float: right;
-  -webkit-appearance: none;
   border: 0;
   background: none;
   color: #fff;
@@ -114,7 +108,6 @@ body {
 
 #exampleModal.is-visible {
   display: block;
-
 }
 
 .page-footer {
