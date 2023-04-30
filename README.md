@@ -1,1 +1,1 @@
-This application allows users to browse through approximately 150 different Pokemon, with stats and pictures of each.
+Through the use of an API, this application allows users to browse through approximately 150 different Pokemon by name using a filtered search and displays a picture of each as well as their height and type upon clicking.
