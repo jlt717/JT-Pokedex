@@ -1,6 +1,9 @@
 # Pokédex
 <br>
 
+## Screenshots
+<br>
+
 <table>
   <tr>
     <td style="padding-right: 10px;">
