@@ -1,4 +1,5 @@
 # Pokédex
+<br>
 
 <table>
   <tr>
@@ -10,9 +11,8 @@
     </td>
   </tr>
 </table>
-
-  
-
+ <br>
+ 
 ## About
 ### This small web application loads data from an external API and allows users to browse through approximately 150 different Pokémon by name using a filtered search and displays a picture of each as well as their height and type upon clicking.
 <br>
