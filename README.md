@@ -24,7 +24,7 @@
 <br>
 
 
-## Languages, Libraries, and Frameworks
+## Technologies
 
 ### ● HTML 
 ### ● CSS 
