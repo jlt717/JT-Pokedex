@@ -32,6 +32,7 @@
 ### ● HTML 
 ### ● CSS 
 ### ● JavaScript
+### ● jQuery
 ### ● Bootstrap
 <br>
 
